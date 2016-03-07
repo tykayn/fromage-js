@@ -1,4 +1,6 @@
-### how about some coffee with your fromage? :D
+### 
+  how about some coffee with your fromage? :D
+###
 class Fromage
 	examine : ->
 		console.log('whoa this js stinks!')
