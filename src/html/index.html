@@ -58,22 +58,14 @@
     <i class="fa fa-file fa-2x"></i>
     Comment jouer:
   </h2>
-
+<div class="alert alert-info">
+  trouvez les argumentations foireuses dans les discours, pas seulement en politique.
+  Cliquez sur une case correspondant à l'erreur et voyez en combien de temps vous pouvez former une ligne verticale, horizontale, ou diagonale.
+</div>
   <div class="row">
     <div class="col-lg-12">
 
-      <div id="board">
 
-        <div class="row" ng-repeat="for sq_row in squares_rows">
-        <div class="square"
-          ng-repeat="for s in sq_row"
-          ng-click="s.active = !s.active"
-          ng-class="{active: s.active}"
-        >
-          <strong> {{s.text}}</strong>
-        </div>
-        </div>
-      </div>
       <pre class="debug padded warning">
       config :
       	{{config|json}}

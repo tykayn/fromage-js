@@ -10,6 +10,7 @@ angular.module "tkApp", []
   $scope.demo = 'WOHOOO angular ça marche'
 
   $http.get('json/squares.json').then( (data)->
+    console.log('data', data)
     $scope.config = data.data
   )
   ###

@@ -42,14 +42,6 @@ var destinations = {
   doc   : "dist/doc/"
 };
 
-var imageminJpegoptim = require('imagemin-jpegoptim');
-
-gulp.task('imagemin', function () {
-  return gulp.src('images/*.jpg')
-    .pipe(imageminJpegoptim({progressive: true})())
-    .pipe(gulp.dest('dist/images'));
-});
-
 /**
  * Run test once and exit
  */
@@ -108,9 +100,9 @@ gulp.task('watch', function () {
   gulp.watch('GulpFile.js', ['default']);
   gulp.watch(sources.tests, ['test']);
   gulp.watch(sources.sass, ['sass2css']);
-  gulp.watch('bower.json', ['wiredep']);
-  gulp.watch(sources.html, ['html_transform']);
-  gulp.watch(sources.htmls, ['html_transform']);
+  gulp.watch('bower.json', ['html_transform', "wiredep"]);
+  gulp.watch(sources.html, ['html_transform', "wiredep"]);
+  gulp.watch(sources.htmls, ['html_transform', "wiredep"]);
 //  gulp.watch(sources.htmls, ['html','wiredep']);
   gulp.watch(sources.coffee, ['coffee2js', 'test']);
 
@@ -142,6 +134,6 @@ gulp.task('wiredep', ['html_transform'], function () {
     .pipe(gulp.dest(destinations.html))
   ;
 });
-gulp.task("default", ['html_transform', "wiredep", "coffee2js", "sass2css", "lint", "browser-sync", "imagemin", "watch"], function () {
+gulp.task("default", ['html_transform', "wiredep", "coffee2js", "sass2css", "lint", "browser-sync" , "watch"], function () {
   console.log("spartiiiii");
 });

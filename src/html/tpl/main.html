@@ -1,4 +1,14 @@
 <div class="alert alert-success">
-    Board
+  <div id="board">
 
+    <div class="row" ng-repeat="for sq_row in squares_rows">
+      <div class="square"
+        ng-repeat="for s in sq_row"
+        ng-click="s.active = !s.active"
+        ng-class="{active: s.active}"
+      >
+        <strong> {{s.text}}</strong>
+      </div>
+    </div>
+  </div>
 </div>
