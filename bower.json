@@ -1,0 +1,23 @@
+{
+  "name": "templates",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tykayn/generator-tk",
+  "authors": [
+    "ty kayn tykayn@gmail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.3.15",
+    "bootstrap": "~3.3.4",
+    "font-awesome": "~4.3.0",
+    "angular-mocks": "~1.3.15"
+  }
+}
