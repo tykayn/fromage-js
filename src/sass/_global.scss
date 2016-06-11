@@ -1,0 +1,14 @@
+#board{
+  border: solid 3px $blue;
+  background: $white;
+}
+.square{
+  &:hover{
+    background: $blue;
+    color: $white;
+  }
+  &.active{
+    background: $dark;
+    color: $white;
+  }
+}

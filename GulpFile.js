@@ -28,6 +28,7 @@ var sources = {
   html     : "src/html/*.html",
   htmls    : "src/html/**/*.html",
   distIndex: "dist/index.html",
+  json     : "src/json/*.json",
   js       : "src/scripts/*.js",
   jsAll    : "src/scripts/**/*.js",
   coffee   : "src/coffee/*.coffee"
@@ -35,6 +36,7 @@ var sources = {
 var destinations = {
   sass  : "dist/css/",
   html  : "dist/",
+  json  : "dist/json",
   coffee: "dist/coffee/",
   js    : "dist/js/",
   doc   : "dist/doc/"
@@ -108,6 +110,7 @@ gulp.task('watch', function () {
   gulp.watch(sources.sass, ['sass2css']);
   gulp.watch('bower.json', ['wiredep']);
   gulp.watch(sources.html, ['html_transform']);
+  gulp.watch(sources.htmls, ['html_transform']);
 //  gulp.watch(sources.htmls, ['html','wiredep']);
   gulp.watch(sources.coffee, ['coffee2js', 'test']);
 
@@ -118,9 +121,11 @@ gulp.task('lint', function () {
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
-
 gulp.task("html_transform", function () {
   console.log("html was changed");
+  gulp.src(sources.json)
+    .pipe(gulp.dest(destinations.json));
+
   gulp.src([sources.htmls, sources.html])
     .pipe(gulp.dest(destinations.html))
     .pipe(browserSync.stream());
@@ -137,6 +142,6 @@ gulp.task('wiredep', ['html_transform'], function () {
     .pipe(gulp.dest(destinations.html))
   ;
 });
-gulp.task("default", [ "wiredep","coffee2js", "sass2css", "lint", "browser-sync", "imagemin", "watch"], function () {
+gulp.task("default", ['html_transform', "wiredep", "coffee2js", "sass2css", "lint", "browser-sync", "imagemin", "watch"], function () {
   console.log("spartiiiii");
 });

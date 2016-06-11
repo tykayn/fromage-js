@@ -56,7 +56,7 @@
   </div>
   <h2>
     <i class="fa fa-file fa-2x"></i>
-    Getting started:
+    Comment jouer:
   </h2>
 
   <div class="row">
@@ -64,7 +64,20 @@
 
       <div id="board">
 
+        <div class="row" ng-repeat="for sq_row in squares_rows">
+        <div class="square"
+          ng-repeat="for s in sq_row"
+          ng-click="s.active = !s.active"
+          ng-class="{active: s.active}"
+        >
+          <strong> {{s.text}}</strong>
+        </div>
+        </div>
       </div>
+      <pre class="debug padded warning">
+      config :
+      	{{config|json}}
+      </pre>
       Code disponible sur
       <a href="http://github.com/tykayn">mon github tykayn</a>
     </div>

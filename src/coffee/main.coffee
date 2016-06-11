@@ -2,13 +2,16 @@
 # here we do stuff
 ###
 angular.module "tkApp", []
-.controller("MainCtrl", ($scope)->
+.controller("MainCtrl", ($scope, $http)->
 
   ###
   # scoped variables
   ###
   $scope.demo = 'WOHOOO angular ça marche'
 
+  $http.get('json/squares.json').then( (data)->
+    $scope.config = data.data
+  )
   ###
   # scoped functions
   ###

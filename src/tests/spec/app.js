@@ -14,7 +14,7 @@ describe("A suite", function () {
 describe('Controller: MainCtrl', function () {
 
     // load the controller's module
-    beforeEach(module('myApp'));
+    beforeEach(module('tkApp'));
 
     var MainCtrl, scope;
     scope = 1;
