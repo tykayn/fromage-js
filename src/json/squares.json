@@ -11,36 +11,60 @@
       "details":""
     },
     {
-      "text":"pente glissante",
+      "text":"ad populum",
+      "details":"s'appuyer sur la popularité d'une chose pour lui associer une valeur"
+    },
+    {
+      "text":"conclusion hâtive",
       "details":""
     },
     {
-      "text":"pente glissante",
+      "text":"inversion de la charge de la preuve",
       "details":""
     },
     {
-      "text":"pente glissante",
+      "text":"ad hominem",
       "details":""
     },
     {
-      "text":"pente glissante",
+      "text":"le véritable irlandais",
       "details":""
     },
     {
-      "text":"pente glissante",
+      "text":"homme de paille",
       "details":""
     },
     {
-      "text":"pente glissante",
+      "text":"confondre causalité et correlation",
       "details":""
     },
     {
-      "text":"pente glissante",
+      "text":"raisonnement circulaire",
       "details":""
     },
     {
-      "text":"pente glissante",
+      "text":"faux dilemme",
+      "details":"limiter les options pour les réduire à seulement deux afin d'orienter le choix de façon malhonnête. Souvent utilisé dans les oppositions nous VS eux, 'si vous n'êtes pas avec nous, vous êtes contre nous' "
+    },
+    {
+      "text":"argument de l'ignorance",
+      "details":"on ne sait pas, donc c'est mon explication qui est la bonne"
+    },
+    {
+      "text":"argument d'autorité",
       "details":""
+    },
+    {
+      "text":"appel à la pitié",
+      "details":""
+    },
+    {
+      "text":"écharppe rouge",
+      "details":"détourner l'attention vers un autre sujet"
+    },
+    {
+      "text":"fallacy fallacy",
+      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
     }
   ]
 }

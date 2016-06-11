@@ -1,8 +1,16 @@
 #board{
   border: solid 3px $blue;
   background: $white;
+  display: block;
 }
 .square{
+  box-sizing: border-box;
+  padding: 1em;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  float: left;
+  background: $white;
   &:hover{
     background: $blue;
     color: $white;

@@ -16,7 +16,9 @@ angular.module "tkApp", []
   ###
   # scoped functions
   ###
-  $scope.doStuff = ->
+  $scope.reinitSquares = ->
+    for square in $scope.config.squares
+      square.active = 0
     console.log('impressig!')
   $scope.doStuffWithArg = (arg)->
     console.log('wow such function!', arg)
