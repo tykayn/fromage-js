@@ -100,9 +100,9 @@ gulp.task('watch', function () {
   gulp.watch('GulpFile.js', ['default']);
   gulp.watch(sources.tests, ['test']);
   gulp.watch(sources.sass, ['sass2css']);
-  gulp.watch('bower.json', ['html_transform', "wiredep"]);
-  gulp.watch(sources.html, ['html_transform', "wiredep"]);
-  gulp.watch(sources.htmls, ['html_transform', "wiredep"]);
+  gulp.watch('bower.json', [ "wiredep", "html_transform"]);
+  gulp.watch(sources.html, ["html_transform"]);
+  gulp.watch(sources.htmls, ["html_transform"]);
 //  gulp.watch(sources.htmls, ['html','wiredep']);
   gulp.watch(sources.coffee, ['coffee2js', 'test']);
 
@@ -125,7 +125,7 @@ gulp.task("html_transform", function () {
 });
 
 // link dependencies only on the main index
-gulp.task('wiredep', ['html_transform'], function () {
+gulp.task('wiredep', function () {
   console.log("wire dependencies from distant index");
   gulp.src(sources.distIndex)
     .pipe(wiredep({

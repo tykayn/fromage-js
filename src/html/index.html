@@ -32,44 +32,33 @@
     <i class="fa fa-book fa-3x"></i>
     Fallacy Bingoooooo
   </h1>
-  <div class="author">
-    <h2>
-      {{demo || ' angular ne marche pas ici '}}
-    </h2>
-
-    {{demo}}
-  </div>
   <hr/>
-  <div ng-include="'tpl/main.html'"></div>
+  <div id="gameover" ng-if="didWeWon()">
+    <h2>Bien joué!</h2>
+  </div>
+  <div class="Well">
+    {{winReason}}
+  </div>
+  <div ng-include="'tpl/bingo.html'"></div>
   <!-- Add your site or application content here -->
-  <div class="container" ng-view=""></div>
+  <div class="container" ng-view="">
+
+  </div>
   <h2>
     <i class="fa fa-file fa-2x"></i>
     Comment jouer:
   </h2>
-<div class="alert alert-info">
-  trouvez les argumentations foireuses dans les discours, pas seulement en politique.
-  Cliquez sur une case correspondant à l'erreur et voyez en combien de temps vous pouvez former une ligne verticale, horizontale, ou diagonale.
-</div>
-  <div class="row">
-    <div class="col-lg-12">
-
-
-      <pre class="debug padded warning">
-      config :
-      	{{config|json}}
-      </pre>
-      Code disponible sur
-      <a href="http://github.com/tykayn">mon github tykayn</a>
-    </div>
-
+  <div class="alert alert-info">
+    trouvez les argumentations foireuses dans les discours, pas seulement en politique. Cliquez sur une case
+    correspondant à l'erreur et voyez en combien de temps vous pouvez former une ligne verticale, horizontale, ou
+    diagonale.
   </div>
-  <div class="row">
-    <a href="http://twitter.com/tykayn">
-      <i class="fa fa-twitter"></i>
-      @tykayn
-    </a>
-  </div>
+  Code disponible sur
+  <a href="http://github.com/tykayn">mon github tykayn</a>
+  <a href="http://twitter.com/tykayn">
+    <i class="fa fa-twitter"></i>
+    @tykayn
+  </a>
 </div>
 
 <!-- bower:js -->

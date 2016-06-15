@@ -1,12 +1,17 @@
 <div class="alert alert-success">
-  <div id="board" ng-style="{width : config.cols * 150 }">
+  <div id="board"
+    style=" width : {{config.cols * 160}}px ; "
+  >
 
       <div class="square"
         ng-repeat="s in config.squares"
-        ng-click="s.active = !s.active"
+        ng-click="toggleSquare(s)"
         ng-class="{active: s.active}"
+        data-toggle="tooltip" title="{{s.details}}"
       >
         <strong> {{s.text}}</strong>
+        <i> {{s.position}}</i>
+
       </div>
   </div>
   <button class="btn btn-default" ng-click="reinitSquares()">réinitialiser</button>

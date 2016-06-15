@@ -1,6 +1,7 @@
 {
   "rows": 5,
   "cols": 5,
+  "sideLength": 5,
   "squares": [
     {
       "text":"point godwin",
@@ -61,6 +62,42 @@
     {
       "text":"écharppe rouge",
       "details":"détourner l'attention vers un autre sujet"
+    },
+    {
+      "text":"fallacy fallacy",
+      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+    },
+    {
+      "text":"fallacy fallacy",
+      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+    },
+    {
+      "text":"fallacy fallacy",
+      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+    },
+    {
+      "text":"fallacy fallacy",
+      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+    },
+    {
+      "text":"fallacy fallacy",
+      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+    },
+    {
+      "text":"fallacy fallacy",
+      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+    },
+    {
+      "text":"fallacy fallacy",
+      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+    },
+    {
+      "text":"fallacy fallacy",
+      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+    },
+    {
+      "text":"fallacy fallacy",
+      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
     },
     {
       "text":"fallacy fallacy",

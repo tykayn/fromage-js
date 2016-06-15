@@ -2,21 +2,62 @@
   border: solid 3px $blue;
   background: $white;
   display: block;
+  overflow: scroll;
+  //padding: 2em;
+  margin: 1em auto;
 }
 .square{
+
+  cursor: pointer;
+  border: solid 3px white;
   box-sizing: border-box;
   padding: 1em;
   width: 150px;
   height: 150px;
   text-align: center;
-  float: left;
+  //float: left;
+  display: inline-block;
   background: $white;
+  margin: 0px;
+  overflow: hidden;
   &:hover{
     background: $blue;
     color: $white;
+    strong{
+      color: $grey;
+    }
   }
   &.active{
     background: $dark;
     color: $white;
+
   }
+  font-size: 'Raleway', 'Arial', 'Open Sans';
+}
+strong{
+  display: block;
+  color: $main-color;
+  &:hover {
+    color: $grey;
+  }
+  .active & {
+  &:hover {
+    color: $grey;
+  }
+
+    color: $white;
+  }
+  font-wieght: 600;
+  &:first-letter{
+    text-transform: uppercase;
+  }
+}
+
+// écran de fin
+
+#gameover{
+  background: mix(greenyellow, $white);
+  color: $white;
+  padding: 2em;
+  font-size: 4em;
 }

@@ -4,7 +4,6 @@
   "description": "bingo your conversation fallacies",
   "main": "GulpFile.js",
   "dependencies": {
-    "angular": "0.0.1",
     "bootstrap": "^3.3.4",
     "browser-sync": "^2.7.1",
     "chai": "~1.9.0",
@@ -34,6 +33,7 @@
     "jshint-stylish": "^1.0.2",
     "karma": "~0.12.28",
     "karma-chrome-launcher": "~0.1.7",
+    "karma-coverage": "^1.0.0",
     "karma-jasmine": "~0.3.2",
     "karma-phantomjs-launcher": "~0.1.3",
     "minimist": "^1.1.1",

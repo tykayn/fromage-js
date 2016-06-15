@@ -131,3 +131,7 @@ $size-sm : '30em';
   -o-transition: all ease 0s;
   transition: all ease 0s;
 }
+.debug{
+  display: inline-block;
+  background: orange;
+}
