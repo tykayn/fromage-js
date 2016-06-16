@@ -4,6 +4,7 @@
   "description": "bingo your conversation fallacies",
   "main": "GulpFile.js",
   "dependencies": {
+    "angular": "^1.5.7",
     "bootstrap": "^3.3.4",
     "browser-sync": "^2.7.1",
     "chai": "~1.9.0",

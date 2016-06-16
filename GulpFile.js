@@ -113,7 +113,7 @@ gulp.task('lint', function () {
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
-gulp.task("html_transform", function () {
+gulp.task("html_transform",['wiredep'], function () {
   console.log("html was changed");
   gulp.src(sources.json)
     .pipe(gulp.dest(destinations.json));

@@ -1,18 +1,23 @@
 <div class="alert alert-success">
   <div id="board"
-    style=" width : {{config.cols * 160}}px ; "
+    style=" width : {{config.cols * 160}}px ; height: {{config.cols * 160}}px ; "
   >
 
-      <div class="square"
+      <div class="square "
         ng-repeat="s in config.squares"
         ng-click="toggleSquare(s)"
         ng-class="{active: s.active}"
-        data-toggle="tooltip" title="{{s.details}}"
       >
-        <strong> {{s.text}}</strong>
+        <strong class="tip"
+          data-toggle="tooltip" title="{{s.details}}"
+        > {{s.text}}</strong>
         <i> {{s.position}}</i>
 
       </div>
   </div>
   <button class="btn btn-default" ng-click="reinitSquares()">réinitialiser</button>
 </div>
+<!--<pre class="debug padded warning">-->
+<!--config :-->
+	<!--{{config|json}}-->
+<!--</pre>-->

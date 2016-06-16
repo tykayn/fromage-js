@@ -57,7 +57,11 @@ angular.module "tkApp", []
       rows[i]=0
     diagonalSlash = 0 # diagonal /
     diagonalAntiSlash = 0 # diagonal \
-
+    rowsTakenForSlash = []
+    ###
+    #  identify all the active squares
+    #  check their position to find if a line is formed
+    ###
     for s in $scope.config.squares
       s.position = colCurrent+", "+rowCurrent
       if(s.active)
@@ -65,14 +69,19 @@ angular.module "tkApp", []
         rows[rowCurrent]++
         # find if a diagonal has all its squares actives
         if(colCurrent==rowCurrent)
+            diagonalAntiSlash++
+#            console.log('added slash', colCurrent, rowCurrent)
+            if(diagonalAntiSlash==squareSide)
+              $scope.winReason = "diagonale antislash \\"
+              return true
+        # find for diagonal / slash
+        console.log('rowsTakenForSlash.indexOf(rowCurrent)', rowsTakenForSlash.indexOf(rowCurrent))
+        if(colCurrent+rowCurrent== squareSide+1 && rowsTakenForSlash.indexOf(rowCurrent) is -1)
           diagonalSlash++
+          rowsTakenForSlash.push(rowCurrent)
+          #            console.log('added anti slash ', colCurrent, rowCurrent )
           if(diagonalSlash==squareSide)
             $scope.winReason = "diagonale slash /"
-            return true
-        if(colCurrent==rowCurrent-colCurrent)
-          diagonalAntiSlash++
-          if(diagonalAntiSlash==squareSide)
-            $scope.winReason = "diagonale antislash \\"
             return true
         # find if a column has all its squares actives
         if(columns[colCurrent]==squareSide)
@@ -87,7 +96,7 @@ angular.module "tkApp", []
       if(colCurrent > squareSide)
         colCurrent=1
         rowCurrent++
-      console.log('rows,columns', rows,columns)
+      console.log('diagonalSlash', 'diagonalAntiSlash', diagonalSlash, diagonalAntiSlash)
     false
   ###
   # initilise everything
@@ -97,5 +106,5 @@ angular.module "tkApp", []
   $scope.init()
 )
 $(document).ready( ->
-  $('[data-toggle="tooltip"]').tooltip()
+  $('.tip').tooltip()
 )
