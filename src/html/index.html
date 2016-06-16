@@ -35,22 +35,42 @@
   <hr/>
   <div id="gameover" ng-if="didWeWon()">
     <h2>Bien joué!</h2>
+    <div class="Well">
+      {{winReason}}
+    </div>
   </div>
-  <div class="Well">
-    {{winReason}}
+  <div id="how-to-play">
+    <h2>
+      <i class="fa fa-file fa-2x"></i>
+      Comment jouer:
+    </h2>
+    <div class="alert alert-info">
+      trouvez les argumentations foireuses dans les discours, pas seulement en politique. Cliquez sur une case
+      correspondant à l'erreur et voyez en combien de temps vous pouvez former une ligne verticale, horizontale, ou
+      diagonale.
+    </div>
   </div>
+
   <div ng-include="'tpl/bingo.html'"></div>
   <!-- Add your site or application content here -->
-
-  <h2>
-    <i class="fa fa-file fa-2x"></i>
-    Comment jouer:
-  </h2>
-  <div class="alert alert-info">
-    trouvez les argumentations foireuses dans les discours, pas seulement en politique. Cliquez sur une case
-    correspondant à l'erreur et voyez en combien de temps vous pouvez former une ligne verticale, horizontale, ou
-    diagonale.
+<div id="blah">
+  <div class="alert alert-success">
+    <h2>à propos des pourritures argumentaires</h2>
+    Trouver des pourritures argumentaires ne vous donne pas nécessairement raison dans un débat.
+    Changer d'opinion sur un sujet est un exercice difficile, s'interroger sur l'origine de nos certitudes et nos craintes à les modifier devrait vous faire réagir et vous pousser à les confronter à la réalité en les comparant à des données et des expériences de personnes tierces. Il suffit d'un contre exemple pour invalider une généralité, mais accumuler des preuves de motifs similaires ne mène pas à la vérité absolue. Avoir l'esprit critique est un sport qui demande de l'exercice et de la rigueur.
+    On en peut rien conclure à partir d'un raisonnement bancal.
+    Puissiez vous comprendre qu'il est normal de rencontrer des individus dont les opinions seront différentes de la vôtre, et qu'ils auront parfois raison.
+    Bonnes conversations à vous. <br>
+    Vous en trouverez d'avantage sur ce site: <br>
+    <a href="http://cortecs.org/materiel/moisissures-argumentatives/">cortecs.org</a>
+    Les vidéos de PBS idea channel en expliquant quelques unes en deux minutes chacune.
+    <a href="https://www.youtube.com/playlist?list=PLtHP6qx8VF7dPql3ll1To4i6vEIPt0kV5">The guide to common fallacies</a>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtHP6qx8VF7dPql3ll1To4i6vEIPt0kV5" frameborder="0" allowfullscreen></iframe>
   </div>
+
+</div>
+
+
   Code disponible sur
   <a href="http://github.com/tykayn">mon github tykayn</a>
   <a href="http://twitter.com/tykayn">

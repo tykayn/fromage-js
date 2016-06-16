@@ -5,43 +5,47 @@
   "squares": [
     {
       "text":"point godwin",
-      "details":"point godwin"
+      "details":"ramaner tout argumentaire sans rapport avec la conquête nazie à ladite conquête."
+    },
+    {
+      "text":"déshonneur par association",
+      "details":"comparer l’interlocuteur ou ses positions à une situation ou à un personnage servant de repoussoir."
     },
     {
       "text":"pente glissante",
-      "details":""
+      "details":"prétendre qu'un enchainement farfelu d'actions inéluctables va mener à une situation inacceptable à partir d'une situation anodine"
     },
     {
       "text":"ad populum",
-      "details":"s'appuyer sur la popularité d'une chose pour lui associer une valeur"
+      "details":"s'appuyer sur la popularité d'une chose pour lui associer une valeur."
     },
     {
-      "text":"conclusion hâtive",
-      "details":""
+      "text":"généralisation abusive",
+      "details":"définir systématiquement un exemple comme représentatif de tout un ensemble"
     },
     {
       "text":"inversion de la charge de la preuve",
-      "details":""
+      "details":"demander à l'autre de prouver quelque chose quand c'est à nous de le faire."
     },
     {
       "text":"ad hominem",
-      "details":""
+      "details":"s'attaquer à la personne plutôt qu'à ses arguments"
     },
     {
       "text":"le véritable irlandais",
-      "details":""
+      "details":"face à un contre exemple de ce qui appartient à ensemble, dire que ce n'est pas un vrai élément de cet ensemble."
     },
     {
       "text":"homme de paille",
-      "details":""
+      "details":"parodier l'argumentaire adversaire pour le vaincre, alors que votre adversaire ne défend pas la même chose."
     },
     {
       "text":"confondre causalité et correlation",
-      "details":""
+      "details":"deux choses peuvent être correllées, elles ne sont pas focément liées aussi directement que le sont une cause et une conséquence."
     },
     {
       "text":"raisonnement circulaire",
-      "details":""
+      "details":"expliquer l'origine d'une chose par un enchainement d'arguments qui ramène à l'origine de l'enchainement"
     },
     {
       "text":"faux dilemme",
@@ -49,59 +53,56 @@
     },
     {
       "text":"argument de l'ignorance",
-      "details":"on ne sait pas, donc c'est mon explication qui est la bonne"
+      "details":"on ne sait pas, donc c'est mon explication qui est la bonne."
     },
     {
       "text":"argument d'autorité",
-      "details":""
+      "details":"utiliser une personne respectée ou reconnue pour appuyer un argument, même si ses compétences reconnues n'ont rien à voir avec le sujet."
     },
     {
       "text":"appel à la pitié",
-      "details":""
+      "details":"plaider des circonstances atténuantes ou particulières qui suscitent de la sympathie et donc cherchent à endormir les critères d’évaluation de l’interlocuteur."
     },
     {
       "text":"écharppe rouge",
-      "details":"détourner l'attention vers un autre sujet"
+      "details":"détourner l'attention vers un autre sujet. souvent lié à l'utilisation d'un homme de paille"
     },
     {
       "text":"fallacy fallacy",
       "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
     },
     {
-      "text":"fallacy fallacy",
-      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+      "text":"texas sharpshooter",
+      "details":"inverser cause et conséquence pour donner l'illusion que l'on a raison. il est plus simple de viser juste lorsque l'on dessine la cible après avoir tiré."
     },
     {
-      "text":"fallacy fallacy",
-      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+      "text":"déplacer le goal",
+      "details":"changer l'objectif de la conversation au fur et à mesure que l'on perd un argumentaire. s'applique également à changer les règles d'un jeu en plein cours de la partie."
     },
     {
-      "text":"fallacy fallacy",
-      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+      "text":"avocat du diable",
+      "details":"faire soudain croire que notre argumentaire pourri consistait à être l'avocat du diable"
     },
     {
-      "text":"fallacy fallacy",
-      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+      "text":"pétition de principe",
+      "details":"faire une démonstration contenant déjà l’acceptation de sa conclusion."
+    },
+
+    {
+      "text":"qui ne suit pas les prémisses",
+      "details":" tirer une conclusion ne suivant pas logiquement les prémisses. la conclusion peut être finalement juste, mais le raisonnement est faux."
     },
     {
-      "text":"fallacy fallacy",
-      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+      "text":"raisonnement panglossien",
+      "details":" raisonner à rebours, vers une cause possible parmi d’autres, vers un scénario préconçu ou vers la position que l’on souhaite prouver."
     },
     {
-      "text":"fallacy fallacy",
-      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+      "text":"argument du silence",
+      "details":"accuser l’interlocuteur d’ignorance d’un sujet parce qu’il ne dit rien à propos d'une anecdote ou d'une partie du sujet."
     },
     {
-      "text":"fallacy fallacy",
-      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
-    },
-    {
-      "text":"fallacy fallacy",
-      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
-    },
-    {
-      "text":"fallacy fallacy",
-      "details":"invalider un argumentaire dans sa globalité sur la base unique qu'il utilise un ou des biais argumentaires répertoriés ici. on peut avoir raison sans pour autant l'argumenter d'une bonne façon."
+      "text":"sophisme",
+      "details":"associer des choses incohétente en les reliant par des attributs prétendument communs."
     }
   ]
 }

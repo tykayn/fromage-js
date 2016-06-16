@@ -3,17 +3,22 @@
     style=" width : {{config.cols * 160}}px ; height: {{config.cols * 160}}px ; "
   >
 
-      <div class="square "
+      <span class="square_box "
         ng-repeat="s in config.squares"
-        ng-click="toggleSquare(s)"
-        ng-class="{active: s.active}"
-      >
-        <strong class="tip"
-          data-toggle="tooltip" title="{{s.details}}"
-        > {{s.text}}</strong>
-        <i> {{s.position}}</i>
 
-      </div>
+      >
+
+        <div class="square" ng-class="{active: s.active}"
+          ng-click="toggleSquare(s)">
+          <strong class="tip"
+            data-toggle="tooltip" title="{{s.details}}"
+          > {{s.text}}</strong>
+          <!--<i> {{s.position}}</i>-->
+          <p class="triangle-right">{{s.details}}</p>
+        </div>
+
+
+      </span>
   </div>
   <button class="btn btn-default" ng-click="reinitSquares()">réinitialiser</button>
 </div>
